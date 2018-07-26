@@ -16,29 +16,40 @@ if (this.props.heart === 'full') {
 //Establece fecha de nacimiento de cada persona en cada tarjeta
   let birthDate = new Date();
   const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-  const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'noviembre', 'diciembre']
+  const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'noviembre', 'diciembre'];
 
   //Determina el día del nacimiento, de acuerdo con props recibido
-  let dd = birthDate.setDate(this.props.bday);
-  if(dd.length === 1) {
-      dd = '0'+dd
-  }
-  let ddd = birthDate.getDay();
-      ddd = days[ddd];
+  let dd = this.props.bday;
+
+  console.log(dd);
+  birthDate.setDate(dd);
+
+
 
 //Determina el mes del nacimiento, de acuerdo con props recibido
-  let mm = birthDate.setMonth(this.props.bmonth);
-  if(mm.length === 1) {
-      mm = '0'+mm
-  }
+  let mm = this.props.bmonth;
+    console.log(mm);
+  mm -= 1;
+
+  birthDate.setMonth(mm);
+
   let mmm = months[mm];
 
+  console.log(mmm);
+
   //Determina el año del nacimiento, de acuerdo con props recibido
-  let yyyy = birthDate.setFullYear(this.props.byear);
+  let yyyy = this.props.byear;
+
+  birthDate.setFullYear(yyyy);
+  console.log(yyyy);
+
+  let ddd = birthDate.getDay();
+      ddd = days[ddd];
+      console.log(ddd);
 
   let birthday = `${ddd}, ${dd} de ${mmm} de ${yyyy}`;
 
-
+  console.log(birthday);
 
 
     return (
@@ -47,7 +58,7 @@ if (this.props.heart === 'full') {
 
     <div className="card__header">
 
-        <img src={this.props.photo} alt="Anna's mugshot" className="card__header--photo"/>
+        <img src={this.props.photo} alt="Person's mugshot" className="card__header--photo"/>
 
         <div className="header--text">
             <h1 className="card__header--title">{this.props.name}</h1>
