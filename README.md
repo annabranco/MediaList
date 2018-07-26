@@ -1,7 +1,7 @@
 ## Adalab 3.5 (React) >> Ejercicios 5 y 6
 
 
-He usado una método para pasar como _props_ en un día, més y año (de nacimiento) con la finalidad de generar una fecha completa en las tarjetas terminadas.
+He usado una método para pasar como _props_ un **día**, **més** y **año** (*de nacimiento*) con la finalidad de pintar una fecha completa de nacimiento en las tarjetas generadas.
 
 **Ejemplo:**
 
