@@ -1,6 +1,14 @@
 ## Adalab 3.5 (React) >> Ejercicios 5 y 6
 
 
-Ejercicio 6 fallando...
+He usado una método para pasar como _props_ en un día, més y año (de nacimiento) con la finalidad de generar una fecha completa en las tarjetas terminadas.
 
-El render() en #root no se está produciendo en GitHub Pages.
+**Ejemplo:**
+
+Se envía como props:
+
+` <Mediacard name='Ellie Branco' bday={30} bmonth={3} byear={2018} photo=(...) `
+
+Y tenemos como resultado:
+
+![Encabezado del MediaCard con fecha completa](https://image.ibb.co/eevAg8/Screen_Shot_2018_07_26_at_19_07_54.png)
