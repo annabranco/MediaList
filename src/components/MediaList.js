@@ -17,7 +17,7 @@ class MediaList extends React.Component {
 
           <Mediacard name='Bianca Branco' bday={20} bmonth={1} byear={2018} photo={photo2} text='Laoreet et, commodo nostrud molestie velit commodo, et dolore ut, augue te accumsan ad ut. Autem, exerci quis at iriuredolor ut nulla tation dolore quis sciurus vero, dignissim feugiat. Eu nisl elit, aliquam tation exerci dolor minim qui at ullamcorper vel, nulla ut consequat veniam dolor at. Illum hendrerit blandit eum molestie, dolore aliquip eum. Ut dolore nibh iusto eu in consequat facilisis enim eum dolore nulla consectetuer at hendrerit.' likes={12} heart='full' />
 
-           <Mediacard name='Ellie Branco' bday={30} bmonth={3} byear={2018} photo={photo3} text='At consequatvel minim nonummy eros dolore qui elit laoreet, augue volutpat eu dolore, erat illum crisare aliquip ea luptatum, wisi ut. At ut praesent consequat molestie accumsan te nibh luptatum. Ullamcorper autem ut dignissim nostrud, crisare dolore ut duis ad tincidunt facilisi vulputate velit. Exerci odio consequat in vero tation, eu eum euismod erat m' likes={18} heart='full' />
+           <Mediacard name='Ellie Branco' bday={30} bmonth={3} byear={2018} photo={photo3} text='At consequatvel minim nonummy eros dolore qui elit laoreet, augue volutpat eu dolore, erat illum crisare aliquip ea luptatum, wisi ut. At ut praesent consequat molestie accumsan te nibh luptatum. Ullamcorper autem ut dignissim nostrud, crisare dolore ut duis ad tincidunt facilisi vulputate velit. Exerci odio consequat in vero tation, eu eum euismod erat ullamcorper.' likes={18} heart='full' />
       </React.Fragment>
     );
   }

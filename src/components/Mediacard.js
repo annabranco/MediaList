@@ -20,29 +20,26 @@ if (this.props.heart === 'full') {
 
   //Determina el día del nacimiento, de acuerdo con props recibido
   let dd = this.props.bday;
-
-  console.log(dd);
+    console.log(dd);
   birthDate.setDate(dd);
-
-
 
 //Determina el mes del nacimiento, de acuerdo con props recibido
   let mm = this.props.bmonth;
     console.log(mm);
-  mm -= 1;
-
+    mm -= 1;
   birthDate.setMonth(mm);
 
   let mmm = months[mm];
-
-  console.log(mmm);
+    console.log(mmm);
 
   //Determina el año del nacimiento, de acuerdo con props recibido
   let yyyy = this.props.byear;
 
+  //Monta la fecha completa del nacimiento
   birthDate.setFullYear(yyyy);
-  console.log(yyyy);
+    console.log(yyyy);
 
+//Retorna el día de la semana, de acuerdo con la fecha completa
   let ddd = birthDate.getDay();
       ddd = days[ddd];
       console.log(ddd);
